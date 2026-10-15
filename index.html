@@ -175,7 +175,7 @@ document.getElementById('auto').onclick=()=>{ autoplay=!autoplay; autoSw.classLi
 const tbox=document.getElementById('thumbs');
 PAGES.forEach((p,idx)=>{
   const d=document.createElement('div'); d.className='thumb'; d.dataset.i=idx;
-  d.innerHTML='<img src="'+p.img.replace('slides/','thumbs/').replace('.png','.jpg')+'" loading="lazy" decoding="async"/><span class="no">'+(idx+1)+'</span>';
+  d.innerHTML='<img src="'+p.img.replace('slides/','thumbs/').replace('.webp','.jpg')+'" loading="lazy" decoding="async"/><span class="no">'+(idx+1)+'</span>';
   d.onclick=()=>go(idx); tbox.appendChild(d);
 });
 
